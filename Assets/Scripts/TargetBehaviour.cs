@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class TargetBehaviour : MonoBehaviour
 {
     public NavMeshAgent agent;
+    float[,] locations = { { 14.96f, 20.97f }, { 36.6f, 20.97f }, { 21.72f, 39.8f }, { 29.2f, 32.5f }, { 11.86f, 39.23f } };
+    int i;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +24,17 @@ public class TargetBehaviour : MonoBehaviour
     {
         Vector3 new_location = new Vector3();
 
-        new_location.x = Random.Range(15f, 38f); ;
-        new_location.z = Random.Range(-5f, -26f);
-        new_location.y = Terrain.activeTerrain.SampleHeight(new_location);
+        i = Random.Range(0, 5);
+
+        // new_location.x = Random.Range(15.5f, 20f);
+        // new_location.z = Random.Range(15.5f, 25f);
+        // new_location.y = Terrain.activeTerrain.SampleHeight(new_location);
+        new_location.x = locations[i, 0];
+        new_location.z = locations[i, 1];
+        new_location.y = 1;
+
+
+
 
         transform.position = new_location;
 
