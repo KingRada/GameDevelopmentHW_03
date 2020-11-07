@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Target02_Behaviour : MonoBehaviour
+public class Target03_Behaviour : MonoBehaviour
 {
     public NavMeshAgent agent;
-    float[,] locations = { { 31.6f, 15.49f }, { 36.6f, 39.4f }, { 20.08f, 35.66f } };
+    float[,] locations = { { 30.14f, 24.401f }, { 15.62f, 20.77f }, { 16.96f, 27.68f } };
     int i;
     // Start is called before the first frame update
     void Start()

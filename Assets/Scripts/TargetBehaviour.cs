@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class TargetBehaviour : MonoBehaviour
 {
     public NavMeshAgent agent;
-    float[,] locations = { { 14.96f, 20.97f }, { 36.6f, 20.97f }, { 21.72f, 39.8f }, { 29.2f, 32.5f }, { 11.86f, 39.23f } };
+    float[,] locations = { { 15.83f, 20.97f }, { 37.599f, 19.3f }, { 23.709f, 40.792f }, { 32.079f, 33.243f }, { 11.86f, 39.23f } };
     int i;
     // Start is called before the first frame update
     void Start()
